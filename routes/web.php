@@ -9,3 +9,7 @@ Route::get('/produto/cadastrar', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/produtos/visualizar', function () {
+    return view('product');
+});

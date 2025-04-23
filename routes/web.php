@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 Route::get('/produtos/visualizar', function () {
     return view('product');
-});
+})->name('busca');
 
 Route::get('/produtos/avaliar', function () {
     return view('survey');

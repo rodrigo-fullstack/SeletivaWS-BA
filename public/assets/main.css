@@ -7,9 +7,72 @@ responsividade, usando layouts flexíveis e/ou media queries:
 - Tablets: 1024 * 768px (retrato e paisagem)
 */
 
-body{
-    background-color: blue;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
 }
+
+/* Estilizações do header */
+
+.header{
+    background: #000;
+
+    .header__nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 4px;
+        margin-right: 5px;
+    }
+}
+
+
+/* Estilizações gerais */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.btn{
+    background: blue;
+    border: none;
+    outline: none;
+}
+
+.btn--menu{
+    background-color: transparent;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ECB049;
+    padding: 1rem;
+    border-radius: 1rem; 
+    gap: 1rem;
+    max-width: 100%;
+    width: 470px;
+    align-items: center;
+
+    .input-box{
+        width: 70%;
+        justify-content: space-between;
+        .input{
+            width: 100%;
+            padding: 8px;
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 667px) {
     body{

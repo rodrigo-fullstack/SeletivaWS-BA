@@ -1,41 +1,42 @@
 <section class="row product">
     <section class="container container--img product__img-container">
-        <img src="{{asset('assets/img/')}}" alt="[Imagem Produto]" class="img product__img">
+        <img src="{{asset('assets/img/product-img.jpg')}}" alt="[Imagem Produto]" class="img product__img" width="200">
     </section>
 
     <section class="container product__information">
         <h1 class="title product__title">
-            [Título]
+            {{-- [Título] --}}
+            PS5
         </h1>
         <section class="row product__information-category">
             <span class="category text product__category">
-                [Categoria]
+                Dispositivos Eletrônicos
             </span>
 
             <span class="category text product__subcategory">
-                [Subcategoria]
+                Consoles de Videogame
             </span>
         </section>
         
         <section class="row product__general-information">
             <span class="company text product__info product__company">
-                [Fabricante]
+                Sony
             </span>
 
             <span class="code text product__info product__code">
-                [Código do Produto]
+                10000
             </span>
         </section>
 
         <section class="slider">
             {{-- Slider --}}
-            <h1>[Slider]</h1>
+            <input type="range" name="slider" id="slider">
         </section>
     </section>
 
     <section class="row jcc product__avaliation-container">
         <span class="avaliation product__info">
-            [Avaliação]
+            
         </span>
     </section>
 </section>

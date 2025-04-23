@@ -1,6 +1,6 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
-   <section class="container container--products">
+   <section class="container products-container">
       <x-product />
       <x-product />
       <x-product />

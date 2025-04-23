@@ -71,6 +71,10 @@ a {
     text-decoration: none;
 }
 
+.title{
+    font-size: 18px;
+}
+
 /* Estilizações relativas a botões */
 .btn {
     background: blue;
@@ -137,8 +141,27 @@ a {
 }
 
 /* Estilizações do componente produto */
-.product {
-    background-color: var(--gold);
+.products-container{
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    .product {
+        width: 50%;
+        background-color: var(--gold);
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: center;
+        border-radius: 1rem;
+    }
+
+    .product__information{
+        gap: 1rem;
+    }
+
+    .product__information-category, .product__general-information{
+        width: 100%;
+        gap: 1rem;
+    }
 }
 
 

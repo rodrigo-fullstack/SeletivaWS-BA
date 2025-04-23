@@ -32,6 +32,20 @@
             <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
         </section>
 
+        <ul class="criteria-container">
+            <li class="criteria">Critério 1</li>
+            <li class="criteria">Critério 2</li>
+            <li class="criteria">Critério 3</li>
+            <li class="criteria">Critério 4</li>
+            <li class="criteria">Critério 5</li>
+            <li class="criteria">Critério 6</li>
+        </ul>
+
+        <section class="input-box row">
+            <label for="optional_criteria">Critérios Opcionais:</label>
+            <input type="radio" name="optional_criteria" id="optional_criteria">
+        </section>
+
         <section class="row row--btn g-20px">
             <x-btn-cancel>
                 Cancelar Cadastro

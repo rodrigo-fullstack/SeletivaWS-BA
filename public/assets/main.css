@@ -207,11 +207,8 @@ a {
     }
 }
 
+/* Para celulares */
 @media screen and (max-width: 667px) {
-    body {
-        /* background-color: green; */
-    }
-
     .header{
         width: 100%;
         padding: 1rem 0rem;
@@ -222,8 +219,7 @@ a {
     }
 }
 
+/* Para tablets */
 @media screen and (max-width: 1024px) and (min-width: 667px) {
-    body {
-        /* background-color: red; */
-    }
+    
 }

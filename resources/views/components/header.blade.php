@@ -15,9 +15,10 @@
         </section>
 
         <section class="row header__search-container">
-            <button class="btn btn--search">
+            <a class="btn btn--search" href="{{route('busca')}}">
                 Buscar Produto
-            </button>
+            </a>
+            
             <input type="text" class="input input--search">
         </section>
 

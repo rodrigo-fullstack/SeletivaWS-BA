@@ -33,12 +33,6 @@
             <input type="range" name="slider" id="slider">
         </section>
     </section>
-
-    <section class="row jcc product__avaliation-container">
-        <span class="avaliation product__info">
-            
-        </span>
-    </section>
 </a>
 
 {{-- 

@@ -1,47 +1,70 @@
 <x-layouts.layout>
-    <section class="container container--product">
-        <section class="product-container--top-section">
-            <section class="row product">
+    <section class="container products-container products-container--show">
+        <section class="row product product--top-section">
                 <section class="container container--img product__img-container">
-                    <img src="{{asset('assets/img/')}}" alt="[Imagem Produto]" class="img product__img">
+                    <img src="{{asset('assets/img/product-img.jpg')}}" alt="[Imagem Produto]" class="img product__img" width="200">
                 </section>
             
                 <section class="container product__information">
                     <h1 class="title product__title">
-                        [Título]
+                        PS5
                     </h1>
                     <section class="row product__information-category">
                         <span class="category text product__category">
-                            [Categoria]
+                            Dispositivos Eletrônicos
                         </span>
             
                         <span class="category text product__subcategory">
-                            [Subcategoria]
+                            Consoles de Videogame
                         </span>
                     </section>
                     
                     <section class="row product__general-information">
                         <span class="company text product__info product__company">
-                            [Fabricante]
+                            Sony
                         </span>
             
                         <span class="code text product__info product__code">
-                            [Código do Produto]
+                            10000
                         </span>
-                    </section>
                 </section>
+            </section>
+
         </section>
-        
-        <section class="product-container--bottom-section">
-            <button class="btn btn--desc">
-                Descrição do Produto
-            </button>
+
+        <section class="row product product--bottom-section">
+            <section class="container product__info product__desc">
+                <button class="btn btn--desc">
+                    Descrição do Produto
+                </button>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, minima. Nisi rerum rem vel impedit error nemo nihil, corrupti quam molestiae neque exercitationem voluptatibus ad nesciunt non cumque! Doloremque explicabo soluta perferendis libero possimus odit cum aliquid pariatur, impedit animi enim beatae, non tempora eligendi nihil voluptatum quaerat officia consequuntur.</p>
+            </section>
             
-            <button class="btn btn--desc">
-                Avaliação do Produto
-            </button>
+            <section class="container product__info product__survey">
+                <button class="btn btn--desc">
+                    Avaliação do Produto
+                </button>
+                <section class="row product__survey-row jcsb">
+                    <label for="average">Média Avaliativa: </label>
+                    <input type="range" name="average" id="average" class="slider" value="100">
+                </section>
+                <section class="row product__survey-row jcsb">
+                    <label for="average">Critério 1: </label>
+                    <input type="range" name="average" id="average" class="slider" value="100">
+                </section>
+
+                <section class="row product__survey-row jcsb">
+                    <label for="average">Critério 2: </label>
+                    <input type="range" name="average" id="average" class="slider" value="100">
+                </section>
+
+
+            </section>
         </section>
     </section>
+        
+        
  </x-layouts.layout>
 
 {{-- Criando a página "Página do Produto"

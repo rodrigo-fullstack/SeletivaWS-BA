@@ -72,6 +72,10 @@ a {
     color: black;
 }
 
+.jcsb{
+    justify-content: space-between;
+}
+
 .title{
     font-size: 18px;
 }
@@ -83,6 +87,7 @@ a {
     outline: none;
     cursor: pointer;
     font-size: 20px;
+    height: fit-content;
 }
 
 .btn--search,
@@ -102,6 +107,11 @@ a {
 .btn--search {
     padding: 8px 1rem;
     color: white;
+}
+
+.slider{
+    width: 200px;
+
 }
 
 /* Estilizações relativas a formulários */
@@ -165,6 +175,34 @@ a {
     }
 }
 
+/* Válido somente para a parte de visualização de produtos (tela product) */
+.products-container--show{
+    gap: 0;
+    .product--bottom-section{
+        align-items: start;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        gap: 1rem;
+    }
+    .product--top-section{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .product__desc{
+        width: 30%;
+    }
+
+    .product__survey{
+        flex-grow: 1;
+        justify-content: start;
+    }
+
+    .btn--desc{
+        text-align: left;
+        background-color: var(--light-green);
+    }
+}
 
 @media screen and (max-width: 667px) {
     body {

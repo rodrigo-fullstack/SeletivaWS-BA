@@ -7,7 +7,7 @@ responsividade, usando layouts flexíveis e/ou media queries:
 - Tablets: 1024 * 768px (retrato e paisagem)
 */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ responsividade, usando layouts flexíveis e/ou media queries:
 
 /* Estilizações do header */
 
-:root{
+:root {
     --light-gold: #ECB049;
     --gold: #ECA149;
     --light-green: #6DBF4F;
@@ -24,54 +24,55 @@ responsividade, usando layouts flexíveis e/ou media queries:
     --red: #e33424;
 }
 
-.header{
+.header {
     background: var(--light-green);
 
-    .header__nav-bar{
+    .header__nav-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-left: 4px;
         margin-right: 5px;
     }
-    
-    .btn--menu{
+
+    .btn--menu {
         background-color: transparent;
     }
-    
-    .btn--search{
+
+    .btn--search {
         display: flex;
-        align-items: center;    
+        align-items: center;
     }
 }
 
 /* Estilizações gerais */
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.row{
+.row {
     display: flex;
 }
 
-.alc{
+.alc {
     align-items: center;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-.g-20px{
+
+.g-20px {
     gap: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* Estilizações relativas a botões */
-.btn{
+.btn {
     background: blue;
     border: none;
     outline: none;
@@ -79,37 +80,44 @@ a{
     font-size: 20px;
 }
 
-.btn--search, .btn--manage{
+.btn--search,
+.btn--manage {
     background-color: var(--gold);
 }
 
-.btn--manage, .btn--submit, .btn--cancel{
+.btn--manage,
+.btn--submit,
+.btn--cancel {
     border-radius: 1rem;
 }
 
-.btn--manage, .btn--submit, .btn--cancel, .btn--search{
+.btn--manage,
+.btn--submit,
+.btn--cancel,
+.btn--search {
     padding: 8px 1rem;
     color: white;
 }
 
 /* Estilizações relativas a formulários */
-.form{
+.form {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--light-gold);
     padding: 1rem;
-    border-radius: 1rem; 
+    border-radius: 1rem;
     gap: 1rem;
     max-width: 100%;
     width: 470px;
     align-items: center;
 
-    .input-box{
+    .input-box {
         width: 70%;
         justify-content: space-between;
-        .input{
+
+        .input {
             width: 100%;
             padding: 8px;
             border: none;
@@ -119,29 +127,29 @@ a{
         }
     }
 
-    .btn--submit{
+    .btn--submit {
         background-color: var(--green);
     }
-    
-    .btn--cancel{
+
+    .btn--cancel {
         background-color: var(--red);
     }
 }
 
 /* Estilizações do componente produto */
-.product{
-background-color: var(--gold);
+.product {
+    background-color: var(--gold);
 }
 
 
 @media screen and (max-width: 667px) {
-    body{
+    body {
         background-color: green;
     }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 667px) {
-    body{
+    body {
         background-color: red;
     }
 }

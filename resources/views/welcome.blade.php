@@ -32,6 +32,16 @@
         <section class="input-box">
             <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
         </section>
+
+        <section class="container container--btn">
+            <button class="btn btn--cancel">
+                Cancelar Cadastro
+            </button>
+            
+            <button class="btn btn--cancel">
+                Finalizar Cadastro
+                </button>
+        </section>
     </form>
 </x-layouts.layout>
 
@@ -77,6 +87,7 @@ texto informativo]
  Texto Informativo “Nome do Critério”
  Campo de Dados: “Descrição/Explicação do Critério”
 (texto) [á direita do texto informativo]
+
 4) Botão “Finalizar Cadastro”
 Deve possuir a mesma função e fluxo do botão de “Submeter” na
 seção “Padrões de Elementos, Fluxos e Informações”

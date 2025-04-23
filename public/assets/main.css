@@ -16,8 +16,15 @@ responsividade, usando layouts flexíveis e/ou media queries:
 
 /* Estilizações do header */
 
+:root{
+    --light-gold: #ECB049;
+    --gold: #ECA149;
+    --light-green: #6DBF4F;
+    --green: #37B06D;
+}
+
 .header{
-    background: #000;
+    background: var(--light-green);
 
     .header__nav-bar{
         display: flex;
@@ -27,7 +34,6 @@ responsividade, usando layouts flexíveis e/ou media queries:
         margin-right: 5px;
     }
 }
-
 
 /* Estilizações gerais */
 .container{
@@ -39,6 +45,14 @@ responsividade, usando layouts flexíveis e/ou media queries:
     display: flex;
 }
 
+.alc{
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
 .btn{
     background: blue;
     border: none;
@@ -48,13 +62,22 @@ responsividade, usando layouts flexíveis e/ou media queries:
 .btn--menu{
     background-color: transparent;
 }
+.btn--search, .btn--manage{
+    background-color: var(--gold);
+}
+
+.btn--manage{
+    padding: 8px 1rem;
+    color: white;
+    border-radius: 1rem;
+}
 
 .form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ECB049;
+    background: var(--light-gold);
     padding: 1rem;
     border-radius: 1rem; 
     gap: 1rem;
@@ -68,6 +91,10 @@ responsividade, usando layouts flexíveis e/ou media queries:
         .input{
             width: 100%;
             padding: 8px;
+            border: none;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 1rem;
         }
     }
 }

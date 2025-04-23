@@ -1,12 +1,20 @@
 <header class="header">
     <nav class="header__nav-bar">
-        <section class="container">
-            <button class="btn btn--menu">
-                <img src="{{asset('assets/img/hamburger_icon_32px.png')}}" alt="">
-            </button>
+        <section class="row header__btn-container alc">
+            <section class="container header__menu-btn-container">
+                <button class="btn btn--menu">
+                    <img src="{{asset('assets/img/hamburger_icon_32px.png')}}" alt="">
+                </button>
+            </section>
+    
+            <section class="container header__logo-container">
+                <button class="btn btn--menu">
+                    <img src="{{asset('assets/img/logo Avaliare.png')}}" alt="" width="100">
+                </button>
+            </section>
         </section>
 
-        <section class="container header__search-container">
+        <section class="row header__search-container">
             <button class="btn btn--search">
                 Buscar Produto
             </button>
@@ -15,12 +23,15 @@
 
         {{-- Acessível somente para representantes --}}
         <section class="container">
-            <button class="btn">
+            <button class="btn btn--manage">
                 Gerenciamento    
             </button>            
         </section>
     </nav>
 
+    <aside class="side-bar header__side-bar hidden">
+
+    </aside>
 </header>
 
 {{-- 

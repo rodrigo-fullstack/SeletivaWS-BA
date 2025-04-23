@@ -1,8 +1,8 @@
 <header class="header">
-    <nav>
+    <nav class="header__nav-bar">
         <section class="container">
             <button class="btn btn--menu">
-            
+                <img src="{{asset('assets/img/hamburger_icon_32px.png')}}" alt="">
             </button>
         </section>
 

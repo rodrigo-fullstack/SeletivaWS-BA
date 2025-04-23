@@ -1,10 +1,10 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
     <x-form class="form--register-product">
-        <section class="input-box">
+        <section class="input-box row">
             <input type="text" class="input input--text" name="name" id="name" placeholder="Nome do Produto">
         </section>
-        <section class="input-box">
+        <section class="input-box row">
             <label for="category">Categoria</label>
             <select class="select" name="category" id="category" placeholder="Categoria do Produto">
                 <option value="a">Teste</option>
@@ -13,7 +13,7 @@
                 <option value="ad">e</option>
             </select>
         </section>
-        <section class="input-box">
+        <section class="input-box row">
             <label for="subcategory">Subcategoria</label>
             <select class="select" name="subcategory" id="subcategory" placeholder="Categoria do Produto">
                 <option value="a">Teste</option>
@@ -22,13 +22,13 @@
                 <option value="ad">e</option>
             </select>
         </section>
-        <section class="input-box">
+        <section class="input-box row">
             <input type="text" class="input input--text" placeholder="Empresa Fabricante" name="company" id="company">
         </section>
-        <section class="input-box">
+        <section class="input-box row">
             <input type="text" class="input input--text" placeholder="Código do Produto" name="product_code" id="product_code">
         </section>
-        <section class="input-box">
+        <section class="input-box row">
             <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
         </section>
 

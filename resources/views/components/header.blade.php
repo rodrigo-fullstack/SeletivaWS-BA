@@ -13,6 +13,7 @@
             <input type="text" class="input input--search">
         </section>
 
+        {{-- Acessível somente para representantes --}}
         <section class="container">
             <button class="btn">
                 Gerenciamento    

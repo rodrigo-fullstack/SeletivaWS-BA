@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="{{asset('assets/main.css')}}">
+
 </head>
 <body>
     <x-header />
@@ -29,3 +31,17 @@ OBS.: Para fins de teste, gerar duas páginas com URLs diferentes, nos quais cad
 uma delas representará a visão de do avaliador e a visão do representante. Um
 exemplo de formato é “http://<nome_do_site_ou_localhost>/avaliador”. O mesmo
 formato pode ser usado para o representante --}}
+
+{{-- 
+Definição dos Usuários.
+A solução terá dois tipos de usuários: avaliadores (consumidores) e representantes
+(empresas)
+Os avaliadores devem ter a capacidade de emitir avaliações de produtos que foram
+cadastrados pelos representantes, como também visualizar avaliações de quaisquer
+produtos dentro do sistema. Eles podem responder as réplicas submetidas pelos
+representantes, permitindo um diálogo entre ambos.
+Os representantes devem ter a capacidade de cadastrar os produtos que poderão
+ser avaliados, como também verificar as avaliações que forem submetidas. Os
+representantes também podem, através do sistema, emitir réplicas (respostas) às
+avaliações, seja em forma de agradecimento ou em forma de questionamento.
+--}}

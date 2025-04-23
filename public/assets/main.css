@@ -6,3 +6,19 @@ responsividade, usando layouts flexíveis e/ou media queries:
 - Celulares Android: 360 * 640 px
 - Tablets: 1024 * 768px (retrato e paisagem)
 */
+
+body{
+    background-color: blue;
+}
+
+@media screen and (max-width: 667px) {
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 667px) {
+    body{
+        background-color: red;
+    }
+}

@@ -130,7 +130,7 @@ a{
 
 /* Estilizações do componente produto */
 .product{
-
+background-color: var(--gold);
 }
 
 

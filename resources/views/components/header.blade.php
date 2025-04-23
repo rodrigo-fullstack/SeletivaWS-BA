@@ -8,9 +8,9 @@
             </section>
     
             <section class="container header__logo-container">
-                <button class="btn btn--menu">
-                    <img src="{{asset('assets/img/logo Avaliare.png')}}" alt="" width="100">
-                </button>
+                <a class="logo header__logo" href="{{ route('busca') }}">
+                    <img src="{{asset('assets/img/logo Avaliare.png')}}" alt="Logo" width="100">
+                </a>
             </section>
         </section>
 

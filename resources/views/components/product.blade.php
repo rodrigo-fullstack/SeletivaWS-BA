@@ -1,4 +1,4 @@
-<section class="row product">
+<a class="row product" href="{{route('visualizar')}}">
     <section class="container container--img product__img-container">
         <img src="{{asset('assets/img/product-img.jpg')}}" alt="[Imagem Produto]" class="img product__img" width="200">
     </section>
@@ -39,7 +39,7 @@
             
         </span>
     </section>
-</section>
+</a>
 
 {{-- 
 

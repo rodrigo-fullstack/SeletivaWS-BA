@@ -14,7 +14,7 @@ Route::get('/produtos', function(){
 
 Route::get('/produtos/visualizar', function () {
     return view('product');
-});
+})->name('visualizar');
 
 Route::get('/produtos/avaliar', function () {
     return view('survey');

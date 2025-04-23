@@ -69,6 +69,7 @@ responsividade, usando layouts flexíveis e/ou media queries:
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .title{

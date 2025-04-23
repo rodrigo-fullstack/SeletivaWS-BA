@@ -1,49 +1,6 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
-    <form action="" method="post" class="form form--register-product">
-        @csrf
-
-        <section class="input-box">
-            <input type="text" class="input input--text" name="name" id="name" placeholder="Nome do Produto">
-        </section>
-        <section class="input-box">
-            <label for="category">Categoria</label>
-            <select class="select" name="category" id="category" placeholder="Categoria do Produto">
-                <option value="a">Teste</option>
-                <option value="b">C</option>
-                <option value="ac">D</option>
-                <option value="ad">e</option>
-            </select>
-        </section>
-        <section class="input-box">
-            <label for="subcategory">Subcategoria</label>
-            <select class="select" name="subcategory" id="subcategory" placeholder="Categoria do Produto">
-                <option value="a">Teste</option>
-                <option value="b">C</option>
-                <option value="ac">D</option>
-                <option value="ad">e</option>
-            </select>
-        </section>
-        <section class="input-box">
-            <input type="text" class="input input--text" placeholder="Empresa Fabricante" name="company" id="company">
-        </section>
-        <section class="input-box">
-            <input type="text" class="input input--text" placeholder="Código do Produto" name="product_code" id="product_code">
-        </section>
-        <section class="input-box">
-            <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
-        </section>
-
-        <section class="container container--btn">
-            <button class="btn btn--cancel">
-                Cancelar Cadastro
-            </button>
-            
-            <button class="btn btn--cancel">
-                Finalizar Cadastro
-                </button>
-        </section>
-    </form>
+   <x-product />
 </x-layouts.layout>
 
 {{-- 
@@ -61,6 +18,15 @@ Visualização do Produto – deverá conter (além da página mestra):
 ◦ Fabricante do produto
 ◦ Código de referência do produto
 ◦ Slider de amostragem
+
+Slider de Amostragem
+Este slider deve ter a barra horizontal centralizada com gradação de cor de
+vermelho (esquerda) para verde (direita) [vide arquivo de imagem utilizável
+“barra_vertical_color.png”]. O intervalo desta barra deve representar o valor de 0 a
+10, com intervalos de 0,5. O indicador/seletor deve ser um círculo preenchido (cor
+branca ou cinza) posicionado sobre a barra. Abaixo do slider, deve ter um valor
+numérico informando a nota do critério de acordo com a posição do seletor.
+
 ◦ Nota numérica do produto
 
 O posicionamento dos elementos acima dentro do container deve seguir o

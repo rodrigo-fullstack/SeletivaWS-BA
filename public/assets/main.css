@@ -34,6 +34,15 @@ responsividade, usando layouts flexíveis e/ou media queries:
         margin-left: 4px;
         margin-right: 5px;
     }
+    
+    .btn--menu{
+        background-color: transparent;
+    }
+    
+    .btn--search{
+        display: flex;
+        align-items: center;    
+    }
 }
 
 /* Estilizações gerais */
@@ -57,23 +66,29 @@ responsividade, usando layouts flexíveis e/ou media queries:
     gap: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .btn{
     background: blue;
     border: none;
     outline: none;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.btn--menu{
-    background-color: transparent;
-}
 .btn--search, .btn--manage{
     background-color: var(--gold);
 }
 
 .btn--manage, .btn--submit, .btn--cancel{
+    border-radius: 1rem;
+}
+
+.btn--manage, .btn--submit, .btn--cancel, .btn--search{
     padding: 8px 1rem;
     color: white;
-    border-radius: 1rem;
 }
 
 .form{

@@ -32,7 +32,7 @@
             <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
         </section>
 
-        <section class="container container--btn">
+        <section class="row row--btn g-20px">
             <x-btn-cancel>
                 Cancelar Cadastro
             </x-btn-cancel>

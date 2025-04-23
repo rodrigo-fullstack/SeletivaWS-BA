@@ -1,3 +1,4 @@
+{{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
     <form action="" method="post" class="form form--register-product">
         @csrf
@@ -46,56 +47,36 @@
 </x-layouts.layout>
 
 {{-- 
-Criando a página “Cadastro e Gerenciamento de Produto”.
-Usuário(s): Representantes
-A página – Cadastro de Produto – deverá conter:
-1) Campos de texto referentes aos dados a serem informados pelo
-Representante:
- Nome do Produto (texto)
- Categoria do Produto (dropdown menu)
- Subcategoria do Produto (dropdown menu)
- Nome da Empresa Fabricante (texto)
- Código do Produto / Código de Barras (texto, formato EAN-13 – 13
-dígitos numéricos)
- Preço Sugerido (numérico real, limite de 2 decimais)
- Descrição do Produto (texto/parágrafo)
+
+Criando a página “Busca e Visualização do Produto”
+Usuário(s): Avaliadores e Representante
+Esta página refere-se à página principal ou primeira página nesta solução, sendo
+acessada quando o usuário buscar por determinado termo e não escolher
+nenhuma sugestão prévia dada pelo sistema via dropdown. A página – Busca e
+Visualização do Produto – deverá conter (além da página mestra):
+ Lista vertical de containers – Cada container deve possuir:
+◦ Imagem do produto (à esquerda centralizado)
+◦ Título ou nome do produto
+◦ Categoria do produto e sub-categoria do produto
+◦ Fabricante do produto
+◦ Código de referência do produto
+◦ Slider de amostragem
+◦ Nota numérica do produto
+
+O posicionamento dos elementos acima dentro do container deve seguir o
+mais fidedigno possível com o protótipo abaixo:
+O tamanho da fonte do título deve ser superior (pelo menos em 2pt),
+às informações abaixo. O tamanho da fonte dos elementos textuais deve ser
+legível dentro das resoluções destacadas. Deve haver um espaçamento
+mínimo entre os elementos textuais para evitar problemas de legibilidade.
+A Nota geral deve ser um valor numérico decimal com, no máximo,
+uma casa decimal (ex.: 8,3 ou 8.3), com tamanho de fonte igual ou superior
+a, no máximo, 1pt a mais, ao tamanho da fonte do “título ou nome do
+produto”. A barra de amostragem deve seguir o mesmo padrão disposto
+anteriormente no documento.
+OBS.: Deve-se mensurar bem os tamanhos dos elementos para evitar
+contrastes ou diferenças exageradas como também o dimensionamento e
+arranjo dos mesmos dentro do container.
 
 
-
-2) Demonstração de Critérios Pertinentes
-A partir da categoria e subcategoria selecionados, o sistema definirá o
-conjunto de critérios relevantes para o produto. Os mesmos devem ser
-demonstrados para o usuário de forma que o mesmo esteja ciente no que
-será avaliado o produto atualmente cadastrado.
-Estes critérios devem estar dispostos em formato de lista ou outro formato de
-separação de dados, o qual tenha uma separação de, pelo menos 6px entre
-eles. Um exemplo de possibilidade segue abaixo:
-Critério 1 | Critério 2 | Critério 3 | Critério 4 | Critério 5 | Critério 6
-
-3) Inclusão de Critérios Opcionais
-O usuário pode inserir até dois novos critérios únicos deste produto
-para compor a lista de critérios totais do produto.
-Estes critérios devem ser intuitivos e, para isto, o usuário deve colocar
-um pequeno texto explicativo para ser demonstrado via tooltip.
-Sumário ← clique para voltar para
-Na página, cada critério opcional deve ter:
- Texto Informativo: “Inserir Critérios Opcionais”
- Caixa de seleção (combobox ou radiobox)
- Texto Informativo “Nome do Critério”
- Campo de Dados; “Nome do Critério” (texto) [á direita do
-texto informativo]
- Texto Informativo “Nome do Critério”
- Campo de Dados: “Descrição/Explicação do Critério”
-(texto) [á direita do texto informativo]
-
-4) Botão “Finalizar Cadastro”
-Deve possuir a mesma função e fluxo do botão de “Submeter” na
-seção “Padrões de Elementos, Fluxos e Informações”
-5) Botão “Cancelar Registro”
-Deve possuir a mesma função e fluxo do botão de “Cancelar” na seção
-“Padrões de Elementos, Fluxos e Informações”
-Ambos os botões devem estar abaixo do texto, com afastamento lateral
-mínimo de 20px entre eles. Os botões devem possuir cores que atendam a
-referência de ações de aprovação ou negação.
-////
 --}}

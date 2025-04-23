@@ -34,11 +34,19 @@
             <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
         </section>
 
-
+        <section class="row row--btn g-20px">
+            <x-btn-cancel>
+                Cancelar registro
+            </x-btn-cancel>
+            
+            <x-btn-submit>
+                Registrar Avaliação 
+            </x-btn-submit>
+        </section>
     </x-form>
  </x-layouts.layout>
 
-{{--Criando a página "Registro de Avaliação".
+{{-- Criando a página "Registro de Avaliação".
 Usuário(s): Avaliadores
 A página – Registro de Avaliação – deverá conter, nesta ordem:
  Texto Informativo: “Nome/Título do Produto”
@@ -79,4 +87,4 @@ Os textos são meramente informativos, para descrever as informações sobre o
 produto no qual o usuário está avaliando.
 O slider deve possuir localizações bem definidas para refletir nos valores das
 notas. Isto é, deve haver 20 posições igualmente espaçadas no intervalo de
-comprimento da barra, cada uma refletindo a nota dentro do intervalo.
+comprimento da barra, cada uma refletindo a nota dentro do intervalo. --}}

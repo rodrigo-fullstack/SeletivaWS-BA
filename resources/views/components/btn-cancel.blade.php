@@ -1,3 +1,3 @@
-<button class="btn btn--cancel">
+<a class="btn btn--cancel" href="{{ route('busca') }}">
     {{$slot}}
-</button>
+</a>

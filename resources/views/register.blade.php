@@ -33,13 +33,13 @@
         </section>
 
         <section class="container container--btn">
-            <button class="btn btn--cancel">
+            <x-btn-cancel>
                 Cancelar Cadastro
-            </button>
+            </x-btn-cancel>
             
-            <button class="btn btn--cancel">
+            <x-btn-submit>
                 Finalizar Cadastro
-                </button>
+            </x-btn-submit>
         </section>
     </x-form>
 </x-layouts.layout>

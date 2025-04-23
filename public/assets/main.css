@@ -45,6 +45,12 @@ responsividade, usando layouts flexíveis e/ou media queries:
     }
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 /* Estilizações gerais */
 .container {
     display: flex;
@@ -116,10 +122,7 @@ a {
 
 /* Estilizações relativas a formulários */
 .form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    place-self: center;
     background: var(--light-gold);
     padding: 1rem;
     border-radius: 1rem;
@@ -206,12 +209,21 @@ a {
 
 @media screen and (max-width: 667px) {
     body {
-        background-color: green;
+        /* background-color: green; */
+    }
+
+    .header{
+        width: 100%;
+        padding: 1rem 0rem;
+        .header__nav-bar{
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 667px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 }

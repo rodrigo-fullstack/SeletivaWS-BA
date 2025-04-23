@@ -1,8 +1,6 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
-    <form action="" method="post" class="form form--register-product">
-        @csrf
-
+    <x-form class="form--register-product">
         <section class="input-box">
             <input type="text" class="input input--text" name="name" id="name" placeholder="Nome do Produto">
         </section>
@@ -43,7 +41,7 @@
                 Finalizar Cadastro
                 </button>
         </section>
-    </form>
+    </x-form>
 </x-layouts.layout>
 
 {{-- 

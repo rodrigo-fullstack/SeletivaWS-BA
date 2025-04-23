@@ -21,6 +21,6 @@ class BtnCancel extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.btn-c-cancel');
+        return view('components.btn-cancel');
     }
 }

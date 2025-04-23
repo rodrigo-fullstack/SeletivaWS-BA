@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/produto/cadastrar', function () {
     return view('welcome');
 });

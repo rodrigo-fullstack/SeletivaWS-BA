@@ -14,7 +14,7 @@
         </section>
         <section class="input-box row">
             <label for="id_subcategoria">Subcategoria</label>
-            <select class="select" name="subcategory" id="id_subcategoria" placeholder="Categoria do Produto">
+            <select class="select" name="id_subcategoria" id="id_subcategoria" placeholder="Categoria do Produto">
                 <option value="teste">Teste</option>
             </select>
         </section>

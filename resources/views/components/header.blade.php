@@ -12,6 +12,10 @@
                     <img src="{{asset('assets/img/logo Avaliare.png')}}" alt="Logo" width="100">
                 </a>
             </section>
+
+            <section class="user-info">
+                {{Auth::user()->email ?? 'Não logado'}}
+            </section>
         </section>
 
         <section class="row header__search-container">
@@ -23,11 +27,13 @@
         </section>
 
         {{-- Acessível somente para representantes --}}
-        <section class="container">
-            <button class="btn btn--manage">
-                Gerenciamento    
-            </button>            
-        </section>
+        @if(Auth::user()->user_type === 'representante')
+            <section class="container">
+                <button class="btn btn--manage">
+                    Gerenciamento    
+                </button>            
+            </section>
+        @endif
     </nav>
 
     <aside class="side-bar header__side-bar hidden">

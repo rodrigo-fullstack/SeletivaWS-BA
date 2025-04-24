@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Criteria;
 use App\Models\Subcategory;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -61,6 +62,27 @@ class DatabaseSeeder extends Seeder
                     'updated_at' => now(),
                 ]
             ]
-            );
+        );
+
+        Criteria::insert([
+            [
+                'nome_criterio' => 'Critério 1'
+            ],
+            [
+                'nome_criterio' => 'Critério 2'
+            ],
+            [
+                'nome_criterio' => 'Critério 3'
+            ],
+            [
+                'nome_criterio' => 'Critério 4'
+            ],
+            [
+                'nome_criterio' => 'Critério 5'
+            ],
+            [
+                'nome_criterio' => 'Critério 6'
+            ],
+        ]);
     }
 }

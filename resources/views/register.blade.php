@@ -1,35 +1,31 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
-    <x-form class="form--register-product">
+    <x-form action="{{route('cadastrar')}}" class="form--register-product">
         <section class="input-box row">
-            <input type="text" class="input input--text" name="name" id="name" placeholder="Nome do Produto">
+            <input type="text" class="input input--text" name="nome_produto" id="nome_produto" placeholder="Nome do Produto">
         </section>
         <section class="input-box row">
-            <label for="category">Categoria</label>
-            <select class="select" name="category" id="category" placeholder="Categoria do Produto">
-                <option value="a">Teste</option>
-                <option value="b">C</option>
-                <option value="ac">D</option>
-                <option value="ad">e</option>
+            <label for="id_categoria">Categoria</label>
+            <select class="select" name="id_categoria" id="id_categoria" placeholder="Categoria do Produto">
+                {{-- Colocar categorias cadastradas --}}
+                {{-- @foreach($categories as $category) --}}
+                <option value="teste">Teste</option>
             </select>
         </section>
         <section class="input-box row">
-            <label for="subcategory">Subcategoria</label>
-            <select class="select" name="subcategory" id="subcategory" placeholder="Categoria do Produto">
-                <option value="a">Teste</option>
-                <option value="b">C</option>
-                <option value="ac">D</option>
-                <option value="ad">e</option>
+            <label for="id_subcategoria">Subcategoria</label>
+            <select class="select" name="subcategory" id="id_subcategoria" placeholder="Categoria do Produto">
+                <option value="teste">Teste</option>
             </select>
         </section>
         <section class="input-box row">
-            <input type="text" class="input input--text" placeholder="Empresa Fabricante" name="company" id="company">
+            <input type="text" class="input input--text" placeholder="Empresa Fabricante" name="fabricante" id="fabricante">
         </section>
         <section class="input-box row">
-            <input type="text" class="input input--text" placeholder="Código do Produto" name="product_code" id="product_code">
+            <input type="text" class="input input--text" placeholder="Código do Produto" name="codigo_produto" id="codigo_produto">
         </section>
         <section class="input-box row">
-            <input type="number" class="input input--number" placeholder="Preço" name="price" id="price">
+            <input type="number" class="input input--number" placeholder="Preço" name="preco_sugerido" id="preco_sugerido">
         </section>
 
         <ul class="criteria-container">
@@ -43,7 +39,7 @@
 
         <section class="input-box row">
             <label for="optional_criteria">Critérios Opcionais:</label>
-            <input type="radio" name="optional_criteria" id="optional_criteria">
+            <input type="radio" name="criterio_opcional" id="criterio_opcional">
         </section>
 
         <section class="row row--btn g-20px">

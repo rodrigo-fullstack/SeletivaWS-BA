@@ -41,4 +41,12 @@ class ProductsController extends Controller
 
         return redirect()->route('busca');
     }
+
+    public function surveyForm(){
+        return view('survey');
+    }
+
+    public function survey(){
+        
+    }
 }

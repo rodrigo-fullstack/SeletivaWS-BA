@@ -1,7 +1,7 @@
 {{-- TODO: Criar página de avaliação --}}
 
 <x-layouts.layout>
-    <x-form class="form--survey-product">
+    <x-form action="{{route('avaliar')}}" class="form--survey-product">
         <section class="input-box row">
             <input type="text" class="input input--text" name="name" id="name" placeholder="Nome do Produto">
         </section>

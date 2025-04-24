@@ -28,6 +28,5 @@ Route::get('/produtos/visualizar', function () {
     return view('product');
 })->name('visualizar');
 
-Route::get('/produtos/avaliar', function () {
-    return view('survey');
-});
+Route::get('/produtos/avaliar', [ProductsController::class, 'surveyForm']);
+Route::get('/produtos/avaliar/submeter', [ProductsController::class, 'survey'])->name('avaliar');

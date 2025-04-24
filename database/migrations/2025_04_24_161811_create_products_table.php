@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('nome_fabricante', 100);
             $table->string('codigo_barras', 13);
             $table->float('preco_sugerido');
-            $table->string('descricao_produto');
+            $table->string('descricao_produto')->nullable();
             $table->timestamps();
         });
     }

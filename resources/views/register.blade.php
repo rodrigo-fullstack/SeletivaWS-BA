@@ -8,14 +8,17 @@
             <label for="id_categoria">Categoria</label>
             <select class="select" name="id_categoria" id="id_categoria" placeholder="Categoria do Produto">
                 {{-- Colocar categorias cadastradas --}}
-                {{-- @foreach($categories as $category) --}}
-                <option value="teste">Teste</option>
+                @foreach($categories as $category)
+                    <option value="{{$category->id}}">{{$category->nome_categoria}}</option>
+                @endforeach
             </select>
         </section>
         <section class="input-box row">
             <label for="id_subcategoria">Subcategoria</label>
             <select class="select" name="id_subcategoria" id="id_subcategoria" placeholder="Categoria do Produto">
-                <option value="teste">Teste</option>
+                @foreach($subcategories as $subcategory)
+                    <option value="{{$subcategory->id}}">{{$subcategory->nome_subcategoria}}</option>
+                @endforeach
             </select>
         </section>
         <section class="input-box row">

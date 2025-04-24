@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -13,9 +14,9 @@ Route::get('/login/representante', function(){
     return redirect('/produtos');
 });
 
-Route::get('/produtos/cadastrar', function () {
-    return view('register');
-});
+Route::get('/produtos/cadastrar', [ProductsController::class, 'registerForm']);
+
+Route::post('/produtos/cadastrar/submeter', [ProductsController::class, 'register'])->name('cadastrar');
 
 Route::redirect('/', '/login/avaliador');
 

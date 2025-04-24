@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Criteria;
 use App\Models\Product;
 use App\Models\Subcategory;
 use Illuminate\Http\RedirectResponse;
@@ -18,7 +19,8 @@ class ProductsController extends Controller
 
         $categories = Category::all();
         $subcategories = Subcategory::all();
-        return view('register')->with('categories', $categories)->with('subcategories', $subcategories);
+        $criterias = Criteria::all();
+        return view('register')->with('categories', $categories)->with('subcategories', $subcategories)->with('criterias', $criterias);
     }
 
     public function register(Request $request): mixed{
@@ -35,7 +37,8 @@ class ProductsController extends Controller
         $product->codigo_barras = $request->codigo_produto;
         $product->preco_sugerido = $request->preco_sugerido;
 
-        dd($product);
         $product->save();
+
+        return redirect()->route('busca');
     }
 }

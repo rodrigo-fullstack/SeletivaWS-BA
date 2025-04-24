@@ -32,12 +32,9 @@
         </section>
 
         <ul class="criteria-container">
-            <li class="criteria">Critério 1</li>
-            <li class="criteria">Critério 2</li>
-            <li class="criteria">Critério 3</li>
-            <li class="criteria">Critério 4</li>
-            <li class="criteria">Critério 5</li>
-            <li class="criteria">Critério 6</li>
+            @foreach ($criterias as $criteria)
+                <li class="criteria">{{$criteria->nome_criterio}}</li>
+            @endforeach
         </ul>
 
         <section class="input-box row">

@@ -12,6 +12,7 @@ Projeto frontend para a seletiva da Worldskills Bahia.
 6. Por último execute o comando `php artisan db:seed --class=DatabaseSeeder` para inserir os dados do banco(verifique o banco de dados no seu software gerenciador como phpmyadmin ou heidisql)
 7. Digite `php artisan serve` no terminal para iniciar a aplicação
 8. Acesse a aplicação na porta localhost:3000/
+9. Para testar com diferentes usuários acesse as rotas /login/avaliador e /login/representante
 
 Rotas para acessar: 
 

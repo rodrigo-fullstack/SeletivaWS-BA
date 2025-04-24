@@ -18,13 +18,14 @@
             </section>
         </section>
 
-        <section class="row header__search-container">
-            <a class="btn btn--search" href="{{route('busca')}}">
+        <form action="{{route('buscaSubmeter')}}" class="row header__search-container" method="post">
+            @csrf
+            <button type="submit" class="btn btn--search">
                 Buscar Produto
-            </a>
+            </button>
             
-            <input type="text" class="input input--search">
-        </section>
+            <input type="text" class="input input--search" name="search" id="search">
+        </form >
 
         {{-- Acessível somente para representantes --}}
         @if(Auth::user()->user_type === 'representante')
@@ -40,7 +41,6 @@
 
     </aside>
 </header>
-
 {{-- 
 Uma barra horizontal constando, da esquerda para a direita:
 1. Um ícone de menu, no padrão hambúrguer, alinhado à esquerda, com

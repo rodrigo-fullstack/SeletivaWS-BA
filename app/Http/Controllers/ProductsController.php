@@ -14,6 +14,9 @@ use Illuminate\View\View;
 
 class ProductsController extends Controller
 {
+    public function index(){
+        return view('welcome')->with('products', Product::with('category')->with('subcategory')->get());
+    }
     public function registerForm(): View | RedirectResponse{
         if(Auth::user()->user_type === 'avaliador') return redirect()->route('busca');
 
@@ -47,6 +50,12 @@ class ProductsController extends Controller
     }
 
     public function survey(){
-        
+
+    }
+
+    public function search(Request $request){
+        $products = Product::where('nome_produto', 'like', "%$request->search%")->get();
+        return view('welcome')->with('products', $products);
+
     }
 }

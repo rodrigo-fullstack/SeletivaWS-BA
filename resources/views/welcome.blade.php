@@ -1,11 +1,9 @@
 {{-- Acessível somente a usuários representantes --}}
 <x-layouts.layout>
    <section class="container products-container">
-      <x-product />
-      <x-product />
-      <x-product />
-      <x-product />
-      <x-product />
+      @foreach ($products as $product)
+         <x-product :product=$product/>
+      @endforeach
    </section>
 </x-layouts.layout>
 

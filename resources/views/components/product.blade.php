@@ -6,25 +6,25 @@
     <section class="container product__information">
         <h1 class="title product__title">
             {{-- [Título] --}}
-            PS5
+            {{$product['nome_produto']}}
         </h1>
         <section class="row product__information-category">
             <span class="category text product__category">
-                Dispositivos Eletrônicos
+                {{($product['category']->nome_categoria)}}
             </span>
 
             <span class="category text product__subcategory">
-                Consoles de Videogame
+                {{($product['category']->nome_subcategoria)}}
             </span>
         </section>
         
         <section class="row product__general-information">
             <span class="company text product__info product__company">
-                Sony
+                {{$product['nome_fabricante']}}
             </span>
 
             <span class="code text product__info product__code">
-                10000
+                {{ $product['codigo_barras'] }}
             </span>
         </section>
 

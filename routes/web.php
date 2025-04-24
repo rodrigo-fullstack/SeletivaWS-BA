@@ -20,9 +20,9 @@ Route::post('/produtos/cadastrar/submeter', [ProductsController::class, 'registe
 
 Route::redirect('/', '/login/avaliador');
 
-Route::get('/produtos', function(){
-    return view('welcome');
-})->name('busca');
+Route::get('/produtos', [ProductsController::class, 'index'])->name('busca');
+
+Route::post('/produtos/buscar', [ProductsController::class, 'search'])->name('buscaSubmeter');
 
 Route::get('/produtos/visualizar', function () {
     return view('product');

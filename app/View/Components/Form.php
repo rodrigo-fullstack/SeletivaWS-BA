@@ -11,7 +11,10 @@ class Form extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $class)
+    public function __construct(
+        public string $class,
+        public string $action
+        )
     {
         //
     }

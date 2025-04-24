@@ -7,9 +7,11 @@ Projeto frontend para a seletiva da Worldskills Bahia.
 1. Instale o Xampp na máquina
 2. Instale o composer para atualizar pacotes caso seja necessário
 3. Abra o projeto no VsCode 
-4. Execute php artisan migrate e o commando sql localizado em database (verifique o banco de dados no seu software gerenciador como phpmyadmin ou heidisql)
-5. No terminal em baixo digite `php artisan serve`
-6. Acesse a aplicação na porta localhost:3000/
+4. Execute comando sql localizado em database: `database.sql`
+5. Depois execute `php artisan migrate` (verifique o banco de dados no seu software gerenciador como phpmyadmin ou heidisql)
+6. Por último execute o comando `php artisan db:seed --class=DatabaseSeeder` para inserir os dados do banco(verifique o banco de dados no seu software gerenciador como phpmyadmin ou heidisql)
+7. Digite `php artisan serve` no terminal para iniciar a aplicação
+8. Acesse a aplicação na porta localhost:3000/
 
 Rotas para acessar: 
 
